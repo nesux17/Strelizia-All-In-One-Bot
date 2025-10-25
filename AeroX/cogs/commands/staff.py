@@ -1056,6 +1056,15 @@ class Staff (commands .Cog ):
                     await ctx .send (message )
                 return 
 
+            applications_count = len(applications_data.get(str(ctx.guild.id), {}))
+            if applications_count == 0:
+                message ="❌ | No applications found for this server."
+                if hasattr (ctx ,'followup'):
+                    await ctx .followup .send (message ,ephemeral =True )
+                else :
+                    await ctx .send (message )
+                return 
+
 
             guild_applications =applications_data [str (ctx .guild .id )]
             pending_count =len ([app for app in guild_applications if app ['status']=='pending'])
