@@ -97,7 +97,7 @@ class HelpCommand (commands .HelpCommand ):
     title ="Help Menu",
     color =0x000000 
     )
-    embed .set_image (url ="https://cdn.discordapp.com/banners/1372468860435042344/2200c89d12a45d8cf648694ad30535f8.png?size=512")
+    embed .set_image (url ="https://cdn.discordapp.com/attachments/1432209526601416827/1436337774725693552/1762519912275.jpg?ex=690f3d4b&is=690debcb&hm=c2a55f24241e4257983e46d209e594e93a8622694750cd5a161193d2804f1232&")
 
     embed .add_field (
     name ="<:home:1372530452681719950> __**General Features**__",
