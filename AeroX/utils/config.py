@@ -4,7 +4,7 @@ TOKEN =os .environ .get ("TOKEN")
 NAME ="Strelizia-bot"
 server ="https://discord.gg/JxCFmz9nZP"
 ch ="https://discord.com/channels/1324668335069331477/1324668336470102143"
-OWNER_IDS =[1124248109472550993 ,1366749025814052895 ,1198187445859139595 ]
+OWNER_IDS =[1043752570243526757 ]
 BotName ="Strelizia-bot"
 serverLink ="https://discord.gg/JxCFmz9nZP"
 """
