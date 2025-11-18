@@ -38,13 +38,13 @@ class Invcrole (commands .Cog ):
             async with db .execute ('SELECT role_id FROM vcroles WHERE guild_id = ?',(ctx .guild .id ,))as cursor :
                 row =await cursor .fetchone ()
                 if row :
-                    embed =discord .Embed (title ="<:icon_danger:1373170993236803688> Access Denied",
+                    embed =discord .Embed (title ="<:serenity_cross:1439951738038915103> Access Denied",
                     description =f"VC role is already set in this guild with the role {ctx.guild.get_role(row[0]).mention}.\nPlease **remove** it to add another one.",color =0x000000 )
                     await ctx .reply (embed =embed )
                     return 
             await db .execute ('INSERT INTO vcroles (guild_id, role_id) VALUES (?, ?)',(ctx .guild .id ,role .id ))
             await db .commit ()
-            embed =discord .Embed (title ="<:icon_tick:1372375089668161597>Success",
+            embed =discord .Embed (title ="<:serenity_tick:1439952220174028801>Success",
             description =f"VC role {role.mention} added for this guild.",color =0x000000 )
             await ctx .reply (embed =embed )
 
@@ -62,7 +62,7 @@ class Invcrole (commands .Cog ):
                     return 
             await db .execute ('DELETE FROM vcroles WHERE guild_id = ? AND role_id = ?',(ctx .guild .id ,role .id ))
             await db .commit ()
-            embed =discord .Embed (title ="<:icon_tick:1372375089668161597>Success",
+            embed =discord .Embed (title ="<:serenity_tick:1439952220174028801>Success",
             description =f"VC role {role.mention} removed for this guild.",color =0x000000 )
             await ctx .send (embed =embed )
 
@@ -80,7 +80,7 @@ class Invcrole (commands .Cog ):
                     return 
                 role =ctx .guild .get_role (row [0 ])
                 embed =discord .Embed (title ="VC Role Configuration",
-                description =f"Current VC role in this guild is {role.mention}.",color =0x000000 )
+                description =f"<:serenity_info:1439952395441410129> Current VC role in this guild is {role.mention}.",color =0x000000 )
                 embed .set_footer (text ="Make sure to place My role above Vc role")
                 await ctx .send (embed =embed )
 
@@ -95,9 +95,9 @@ class Invcrole (commands .Cog ):
                     role =member .guild .get_role (row [0 ])
 
                     if after .channel and role not in member .roles :
-                        await self .add_role_with_retry (member ,role ,reason ="Member Joined VC | Strelizia Invcrole")
+                        await self .add_role_with_retry (member ,role ,reason ="Member Joined VC | Lunaris Invcrole")
                     elif not after .channel and role in member .roles :
-                        await self .remove_role_with_retry (member ,role ,reason ="Member Left VC | Strelizia Invcrole")
+                        await self .remove_role_with_retry (member ,role ,reason ="Member Left VC | Lunaris Invcrole")
         except discord .Forbidden :
             print (f"Bot lacks permissions to maange role in a guild during Invc Event .")
         except Exception as e :
@@ -133,14 +133,8 @@ class Invcrole (commands .Cog ):
 
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
-    + for any queries reach out Community or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out Community or DM me.
 """
