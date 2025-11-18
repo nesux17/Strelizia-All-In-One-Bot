@@ -110,7 +110,7 @@ class Antinuke (commands .Cog ):
 
     is_owner =ctx .author .id ==ctx .guild .owner_id 
     if not is_owner and not check :
-      embed =discord .Embed (title ="<:icon_cross:1372375094336425986> | Access Denied",
+      embed =discord .Embed (title ="<:serenity_cross:1439951738038915103> | Access Denied",
       color =0x000000 ,
       description ="Only Server Owner or Extra Owner can Run this Command!"
       )
@@ -150,16 +150,16 @@ class Antinuke (commands .Cog ):
 
 
         if not ctx .guild .me .guild_permissions .administrator :
-          setup_embed .description +="\n<:icon_danger:1373170993236803688> | Setup failed: Missing **Administrator** permission."
+          setup_embed .description +="\n<:serenity_warning:1439995432230195423> | Setup failed: Missing **Administrator** permission."
           await setup_message .edit (embed =setup_embed )
           return 
 
         await asyncio .sleep (1 )
-        setup_embed .description +="\n<a:strelizia_loading:1372527554761855038> Checking Strelizia-bot's role position for optimal configuration..."
+        setup_embed .description +="\n<a:strelizia_loading:1372527554761855038> Checking bot's role position for optimal configuration..."
         await setup_message .edit (embed =setup_embed )
 
         await asyncio .sleep (1 )
-        setup_embed .description +="\n<a:strelizia_loading:1372527554761855038> | Crafting and configuring the Strelizia Unstoppable Power role..."
+        setup_embed .description +="\n<a:strelizia_loading:1372527554761855038> | Crafting and configuring the UNbypassable security role..."
         await setup_message .edit (embed =setup_embed )
 
         try :
@@ -173,25 +173,25 @@ class Antinuke (commands .Cog ):
           )
           await ctx .guild .me .add_roles (role )
         except discord .Forbidden :
-          setup_embed .description +="\n<:icon_danger:1373170993236803688> | Setup failed: Insufficient permissions to create role."
+          setup_embed .description +="\n<:serenity_warning:1439995432230195423> | Setup failed: Insufficient permissions to create role."
           await setup_message .edit (embed =setup_embed )
           return 
         except discord .HTTPException as e :
-          setup_embed .description +=f"\n<:icon_danger:1373170993236803688> | Setup failed: HTTPException: {e}\nCheck Guild **Audit Logs**."
+          setup_embed .description +=f"\n<:serenity_warning:1439995432230195423> | Setup failed: HTTPException: {e}\nCheck Guild **Audit Logs**."
           await setup_message .edit (embed =setup_embed )
           return 
 
         await asyncio .sleep (1 )
-        setup_embed .description +="\n<a:strelizia_loading:1372527554761855038> Ensuring precise placement of the Strelizia Unstoppable Power role..."
+        setup_embed .description +="\n<a:strelizia_loading:1372527554761855038> Ensuring precise placement of the role..."
         await setup_message .edit (embed =setup_embed )
         try :
           await ctx .guild .edit_role_positions (positions ={role :1 })
         except discord .Forbidden :
-          setup_embed .description +="\n<:icon_danger:1373170993236803688> | Setup failed: Insufficient permissions to move role."
+          setup_embed .description +="\n<:serenity_warning:1439995432230195423> | Setup failed: Insufficient permissions to move role."
           await setup_message .edit (embed =setup_embed )
           return 
         except discord .HTTPException as e :
-          setup_embed .description +=f"\n<:icon_danger:1373170993236803688> | Setup failed: HTTPException: {e}."
+          setup_embed .description +=f"\n<:serenity_warning:1439995432230195423> | Setup failed: HTTPException: {e}."
           await setup_message .edit (embed =setup_embed )
           return 
 
@@ -226,9 +226,9 @@ class Antinuke (commands .Cog ):
 
         embed .add_field (name ='',value ="<:disable_no:1372374999310274600><:enable_yes:1372375008441143417> **Anti Prune**\n **Auto Recovery**")
 
-        embed .set_author (name ="Strelizia-bot Antinuke",icon_url =self .bot .user .avatar .url )
+        embed .set_author (name ="Lunaris Antinuke",icon_url =self .bot .user .avatar .url )
 
-        embed .set_footer (text ="Successfully Enabled Antinuke for this server | Powered by AeroX Development",icon_url =self .bot .user .avatar .url )
+        embed .set_footer (text ="Successfully Enabled Antinuke for this server | Powered by Serenity Studios",icon_url =self .bot .user .avatar .url )
         embed .set_thumbnail (url =self .bot .user .avatar .url )
 
         view =discord .ui .View ()
@@ -294,14 +294,8 @@ async def setup (bot ):
   await bot .add_cog (Antinuke (bot ))
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
-    + for any queries reach out Community or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.srnty.in (Serenity Studios)
     + for any queries reach out Community or DM me.
 """
