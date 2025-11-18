@@ -146,7 +146,7 @@ class PersonalityModal (discord .ui .Modal ,title ="Set Your AI Personality"):
         self .ai_cog =ai_cog 
 
 
-        default_prompt ="""You are Strelizia, an intelligent and caring Discord bot assistant created by solcodez and hiro.null! 💕
+        default_prompt ="""You are Lunaris, an intelligent and caring Discord bot assistant powered by Serenity Studios! 💕
 
 CORE PERSONALITY:
 - Intelligent, helpful, and genuinely caring about users
@@ -194,7 +194,7 @@ Ready to have meaningful conversations and help with anything you need! 💖"""
 
         self .personality_input =discord .ui .TextInput (
         label ="Your AI Personality",
-        placeholder ="Describe how you want Strelizia to respond to you...",
+        placeholder ="Describe how you want Lunaris to respond to you...",
         default =display_text ,
         style =discord .TextStyle .paragraph ,
         max_length =2000 ,
@@ -221,7 +221,7 @@ Ready to have meaningful conversations and help with anything you need! 💖"""
             await self .ai_cog .bot .db .commit ()
 
             embed =discord .Embed (
-            title ="✨ Personality Set",
+            title ="<:cute:1439995997534027908> Personality Set",
             description =f"Your AI personality has been updated! The AI will now respond according to your preferences.",
             color =0x000000 ,
             timestamp =datetime .now (timezone .utc )
