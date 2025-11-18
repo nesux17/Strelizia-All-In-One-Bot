@@ -11,7 +11,7 @@ import asyncio
 
 
 class Games (Cog ):
-    """Strelizia Games"""
+    """Serenity Games"""
 
     def __init__ (self ,client :Strelizia ):
         self .client =client 
@@ -186,14 +186,8 @@ class Games (Cog ):
         await game .start (ctx )
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
-    + for any queries reach out Community or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out Community or DM me.
 """
