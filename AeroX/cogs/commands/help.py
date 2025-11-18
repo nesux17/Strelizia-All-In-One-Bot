@@ -265,14 +265,8 @@ class Help (Cog ,name ="help"):
 
 
 """
-: ! Aegis !
+: ! Naira !
     + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
-    + for any queries reach out Community or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios )
     + for any queries reach out Community or DM me.
 """
