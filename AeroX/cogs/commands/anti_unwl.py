@@ -24,7 +24,7 @@ class Unwhitelist (commands .Cog ):
         if ctx .guild .member_count <2 :
             embed =discord .Embed (
             color =0x08ff00 ,
-            description ="<:icon_cross:1372375094336425986> | Your Server Doesn't Meet My 30 Member Criteria"
+            description ="<:serenity_cross:1439951738038915103> | Your Server Doesn't Meet My 30 Member Criteria"
             )
             return await ctx .send (embed =embed )
 
@@ -42,7 +42,7 @@ class Unwhitelist (commands .Cog ):
 
         is_owner =ctx .author .id ==ctx .guild .owner_id 
         if not is_owner and not check :
-            embed =discord .Embed (title ="<:icon_cross:1372375094336425986> | Access Denied",
+            embed =discord .Embed (title ="<:serenity_cross:1439951738038915103> | Access Denied",
             color =0x08ff00 ,
             description ="Only Server Owner or Extra Owner can Run this Command!"
             )
@@ -52,9 +52,9 @@ class Unwhitelist (commands .Cog ):
             embed =discord .Embed (
             color =0x08ff00 ,
             description =(
-            f"**{ctx.guild.name} Security Settings <:icon_stagemoderator:1337295812102721577>\n"
+            f"**{ctx.guild.name} Security Settings <:serenity_security:1439952030226579457>\n"
             "Ohh NO! looks like your server doesn't enabled security\n\n"
-            "Current Status : <:disable_no:1372374999310274600><:enable_yes:1372375008441143417>\n\n"
+            "Current Status : <:serenity_unlock:1439952921994461257>\n\n"
             "To enable use `antinuke enable` **"
             )
             )
@@ -66,12 +66,12 @@ class Unwhitelist (commands .Cog ):
             title ="__**Unwhitelist Commands**__",
             description ="**Removes user from whitelisted users which means that the antinuke module will now take actions on them if they trigger it.**"
             )
-            embed .add_field (name ="__**Usage**__",value ="<:red_dot:1372500011669258281> `unwhitelist @user/id`\n<:red_dot:1372500011669258281> `unwl @user`")
+            embed .add_field (name ="__**Usage**__",value ="<:serenity_info:1439952395441410129> `unwhitelist @user/id`\n<:serenity_info:1439952395441410129> `unwl @user`")
             return await ctx .send (embed =embed )
 
         async with self .db .execute (
         "SELECT * FROM whitelisted_users WHERE guild_id = ? AND user_id = ?",
-        (ctx .guild .id ,member .id )
+        (ctx .guild .id ,member .id )                                                                                                                                    
         )as cursor :
             data =await cursor .fetchone ()
 
