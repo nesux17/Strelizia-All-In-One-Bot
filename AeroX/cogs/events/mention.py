@@ -78,12 +78,8 @@ class Mention (commands .Cog ):
                 embed =discord .Embed (
                 color =self .color ,
                 description =(
-                f"**Greetings, <@{message.author.id}>**\n"
+                f"**<:butterfly:1439949153181372587> Greetings, <@{message.author.id}>**\n"
                 f"**Prefix for this server:** `{prefix}`\n\n"
-                f"> `Strelizia is a refined and intelligent presence—elegant, calm, and built to empower your server.`\n"
-                f"> `She listens when needed, acts with precision, and adds a layer of style to every interaction.`\n"
-                f"> `From moderation to utility, she does it all—quietly, efficiently, and beautifully.`\n"
-                f"> `Not just a bot. A companion.`\n\n"
                 )
                 )
                 embed .set_author (
@@ -93,14 +89,14 @@ class Mention (commands .Cog ):
                 embed .set_thumbnail (url =self .bot .user .avatar .url )
                 embed .set_image (url =custom_image_url )
                 embed .set_footer (
-                text ="🩶 Welcome to her sanctuary.",
+                text ="Powered by Serenity Studios.",
                 icon_url =self .bot .user .avatar .url 
                 )
                 embed .timestamp =discord .utils .utcnow ()
                 await message .channel .send (embed =embed )
 """
-: ! Aegis !
+: ! Naira !
     + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios )
     + for any queries reach out Community or DM me.
 """
