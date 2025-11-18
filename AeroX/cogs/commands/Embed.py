@@ -167,7 +167,7 @@ class Embed (commands .Cog ):
                 tit =await ctx .bot .wait_for ("message",timeout =30 ,check =chk )
                 chnl =tit .channel_mentions [0 ]
                 await chnl .send (embed =embed )
-                await ctx .send (embed =discord .Embed (title ="<:icon_tick:1372375089668161597>Success",
+                await ctx .send (embed =discord .Embed (title ="<:serenity_tick:1439952220174028801>Success",
                 description ="Sent the embed message to the mentioned channel",
                 color =0x2f3136 ))
             except asyncio .TimeoutError :
@@ -180,10 +180,10 @@ class Embed (commands .Cog ):
             await interaction .response .defer ()
             await msg .delete ()
 
-        button_send =Button (label ="Send Embed",emoji ="<:icon_tick:1372375089668161597>",style =discord .ButtonStyle .success )
+        button_send =Button (label ="Send Embed",emoji ="<:serenity_tick:1439952220174028801>",style =discord .ButtonStyle .success )
         button_send .callback =send_callback 
 
-        button_delete =Button (label ="Cancel Setup",emoji ="<:icon_cross:1372375094336425986>",style =discord .ButtonStyle .danger )
+        button_delete =Button (label ="Cancel Setup",emoji ="<:serenity_cross:1439951738038915103>",style =discord .ButtonStyle .danger )
         button_delete .callback =delete_callback 
 
         view =View (timeout =180 )
@@ -197,14 +197,8 @@ class Embed (commands .Cog ):
 
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out support or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
-    + for any queries reach out Community or DM me.
 """
