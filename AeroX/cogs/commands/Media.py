@@ -62,7 +62,7 @@ class Media (commands .Cog ):
             await db .commit ()
 
         embed =discord .Embed (
-        title ="<:icon_tick:1372375089668161597>Success",
+        title ="<:serenity_tick:1439952220174028801>Success",
         description =f"Successfully set {channel.mention} as the media-only channel.",
         color =0x000000 
         )
@@ -90,7 +90,7 @@ class Media (commands .Cog ):
             await db .commit ()
 
         embed =discord .Embed (
-        title ="<:icon_tick:1372375089668161597>Success",
+        title ="<:serenity_tick:1439952220174028801>Success",
         description ="Successfully removed the media-only channel.",
         color =0x000000 
         )
@@ -162,7 +162,7 @@ class Media (commands .Cog ):
             await db .commit ()
 
         embed =discord .Embed (
-        title ="<:icon_tick:1372375089668161597>Success",
+        title ="<:serenity_tick:1439952220174028801> Success",
         description =f"{user.mention} has been added to the bypass list.",
         color =0x000000 
         )
@@ -189,7 +189,7 @@ class Media (commands .Cog ):
             await db .commit ()
 
         embed =discord .Embed (
-        title ="<:icon_tick:1372375089668161597>Success",
+        title ="<:serenity_tick:1439952220174028801> Success",
         description =f"{user.mention} has been removed from the bypass list.",
         color =0x000000 
         )
@@ -275,7 +275,7 @@ class Media (commands .Cog ):
                     embed =discord .Embed (
                     title ="You Have Been Blacklisted",
                     description =(
-                    "<:icon_danger:1373170993236803688> You are blacklisted from using my commands due to spamming in the media channel. "
+                    "<:serenity_warning:1439995432230195423> You are blacklisted from using my commands due to spamming in the media channel. "
                     "If you believe this is a mistake, please reach out to the support server with proof."
                     ),
                     color =0x000000 
@@ -284,14 +284,8 @@ class Media (commands .Cog ):
                     del self .infractions [message .author .id ]
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
-    + for any queries reach out Community or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out Community or DM me.
 """
