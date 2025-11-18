@@ -87,7 +87,7 @@ class Unwhitelist (commands .Cog ):
         )
         await self .db .commit ()
 
-        embed =discord .Embed (title ="<:icon_tick:1372375089668161597>Success",
+        embed =discord .Embed (title ="<:serenity_tick:1439952220174028801> Success",
         color =0x000000 ,
         description =f"User <@!{member.id}> has been removed from the whitelist."
         )
@@ -95,14 +95,8 @@ class Unwhitelist (commands .Cog ):
 
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
-    + for any queries reach out Community or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out Community or DM me.
 """
