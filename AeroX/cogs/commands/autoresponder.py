@@ -54,7 +54,7 @@ class AutoResponder (commands .Cog ):
 
             await db .execute ("INSERT INTO autoresponses (guild_id, name, message) VALUES (?, ?, ?)",(ctx .guild .id ,name_lower ,message ))
             await db .commit ()
-            await ctx .reply (embed =discord .Embed (title ="<:icon_tick:1372375089668161597>| Success",
+            await ctx .reply (embed =discord .Embed (title ="<:serenity_like:1439952783653736521>| Success",
             description =f"Created autoresponder `{name}` in {ctx.guild.name}",
             color =0x000000 
             ))
@@ -73,7 +73,7 @@ class AutoResponder (commands .Cog ):
 
             await db .execute ("DELETE FROM autoresponses WHERE guild_id = ? AND LOWER(name) = ?",(ctx .guild .id ,name_lower ))
             await db .commit ()
-            await ctx .reply (embed =discord .Embed (title ="<:icon_tick:1372375089668161597>| Success",
+            await ctx .reply (embed =discord .Embed (title ="<:serenity_like:1439952783653736521>| Success",
             description =f"Deleted autoresponder `{name}` in {ctx.guild.name}",
             color =0x000000 
             ))
@@ -92,7 +92,7 @@ class AutoResponder (commands .Cog ):
 
             await db .execute ("UPDATE autoresponses SET message = ? WHERE guild_id = ? AND LOWER(name) = ?",(message ,ctx .guild .id ,name_lower ))
             await db .commit ()
-            await ctx .reply (embed =discord .Embed (title ="<:icon_tick:1372375089668161597>| Success",
+            await ctx .reply (embed =discord .Embed (title ="<:serenity_like:1439952783653736521>| Success",
             description =f"Edited autoresponder `{name}` in {ctx.guild.name}",
             color =0x000000 
             ))
@@ -136,14 +136,8 @@ async def setup (bot ):
 
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
+@Author: Naira
+    + Discord: Serenity Studios 
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out support or DM me.
-"""
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
-    + for any queries reach out Community or DM me.
 """
