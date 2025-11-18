@@ -28,13 +28,13 @@ class OnOrOff (BasicView ):
         super ().__init__ (ctx ,timeout =None )
         self .value =None 
 
-    @discord .ui .button (label ="DM me",emoji ="<:icon_tick:1372375089668161597>",custom_id ='Yes',style =discord .ButtonStyle .green )
+    @discord .ui .button (label ="DM me",emoji ="<:serenity_tick:1439952220174028801>",custom_id ='Yes',style =discord .ButtonStyle .green )
     async def dare (self ,interaction :discord .Interaction ,button :discord .ui .Button ):
         self .value ='Yes'
         await interaction .response .defer ()
         self .stop ()
 
-    @discord .ui .button (label ="Don't DM",emoji ="<:icon_cross:1372375094336425986>",custom_id ='No',style =discord .ButtonStyle .danger )
+    @discord .ui .button (label ="Don't DM",emoji ="<:serenity_cross:1439951738038915103>",custom_id ='No',style =discord .ButtonStyle .danger )
     async def truth (self ,interaction :discord .Interaction ,button :discord .ui .Button ):
         self .value ='No'
         await interaction .response .defer ()
@@ -139,10 +139,10 @@ class afk (commands .Cog ):
                                 await db .execute ("UPDATE afk SET mentions = ? WHERE user_id = ?",(new_mentions ,user_mention .id ))
                                 await db .commit ()
 
-                                embed =discord .Embed (description =f'You were mentioned in **{message.guild.name}** by **{message.author}**',color =discord .Color .from_rgb (black1 ,black2 ,black3 ))
-                                embed .add_field (name ="Total mentions:",value =new_mentions ,inline =False )
-                                embed .add_field (name ="Message:",value =message .content ,inline =False )
-                                embed .add_field (name ="Jump Message:",value =f"[Jump to message]({message.jump_url})",inline =False )
+                                embed =discord .Embed (description =f'<:serenity_info:1439952395441410129> You were mentioned in **{message.guild.name}** by **{message.author}**',color =discord .Color .from_rgb (black1 ,black2 ,black3 ))
+                                embed .add_field (name ="- Total mentions:",value =new_mentions ,inline =False )
+                                embed .add_field (name ="- Message:",value =message .content ,inline =False )
+                                embed .add_field (name ="- Jump Message:",value =f"[Jump to message]({message.jump_url})",inline =False )
 
                                 if afk_data [4 ]=='True':
                                     try :
@@ -165,7 +165,7 @@ class afk (commands .Cog ):
             reason ="I am afk :)"
 
         if any (invite in reason .lower ()for invite in ['discord.gg','gg/']):
-            emd =discord .Embed (description ="<:icon_danger:1373170993236803688> | You can't advertise Serve Invite in the AFK reason",color =0x0c0606 )
+            emd =discord .Embed (description ="<:serenity_warning:1439995432230195423> | You can't advertise Serve Invite in the AFK reason",color =0x0c0606 )
             return await ctx .send (embed =emd )
 
         view =OnOrOff (ctx )
@@ -189,21 +189,14 @@ class afk (commands .Cog ):
             await db .commit ()
 
             await test .delete ()
-            af =discord .Embed (title ='<:icon_tick:1372375089668161597> Success',
+            af =discord .Embed (title ='<:serenity_tick:1439952220174028801> Success',
             description =f'{ctx.author.mention}, You are now marked as AFK due to: **{reason}**',
             color =0x000000 )
             await ctx .reply (embed =af )
 
 """
-@Author: Aegis
-    + Discord: Solcodez
-    + Community: https://discord.strelix.xyz (AeroX Development)
-    + for any queries reach out Community or DM me.
-"""
-
-"""
-: ! Aegis !
-    + Discord: root.exe
-    + Community: https://discord.gg/meet (AeroX Development )
+@Author: Naira
+    + Discord: Serenity Studios
+    + Community: https://discord.gg/uWaEufrXRp (Serenity Studios)
     + for any queries reach out Community or DM me.
 """
